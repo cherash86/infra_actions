@@ -70,7 +70,7 @@ jobs:
         #passphrase: ${{ secrets.PASSPHRASE }} # Еслиw ваш ssh-dключ защищён фразой-паролем
         script: |
           # Выполняет pull образа с DockerHub
-          sudo docker pull <имя-пользователя>/<имя-репозитория>
+          sudo docker pull cherash86/gates:v2.11.1989
           #остановка всех контейнеров
           sudo docker stop $(sudo docker ps -a -q)
-          sudo docker run --rm -d -p 5000:5000 <имя-пользователя>/<имя-репозитория> 
+          sudo docker run --rm -d -p 5000:5000 cherash86/gates:v2.11.1989
