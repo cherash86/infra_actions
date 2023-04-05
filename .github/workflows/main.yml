@@ -67,7 +67,7 @@ jobs:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USER }}
         key: ${{ secrets.SSH_KEY }}
-        passphrase: ${{ secrets.PASSPHRASE }} # Еслиw ваш ssh-dключ защиdщён фразой-паdролеsм
+        passphrase: ${{ secrets.PASSPHRASE }} # Еслиw ваш ssh-dключ защиdsщён фразой-паdролеsм
         script: |
           # Выполняет pull образа с DockerHub
           sudo docker pull cherash86/gates:v2.11.1989
